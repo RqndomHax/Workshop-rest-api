@@ -106,11 +106,11 @@ fn hello(name: &str) -> Result<Json<User>, String> {
 
 #### Some help?
 ```rust
-// Create a user
-    let test_user = User {
-        name: "Shizue".to_string(),
-        ..Default::default()
-    };
+// Create an user
+let test_user = User {
+    name: "Shizue".to_string(),
+    ..Default::default()
+};
 
 // Return an ok Result
 let result: Result<Json<String>, ()> = Ok(Json("Yes!".to_string()));
