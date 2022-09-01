@@ -22,7 +22,6 @@ By example, if you want to interact with the <a href="https://developer.riotgame
 ```cargo
 [dependencies]
 rocket = "0.5.0-rc.2"
-
 ```
 * Run `cargo run` to check if everything is good;
 > The output should look like this:
@@ -55,7 +54,7 @@ fn rocket() -> _ {
 ```rust
 #[get("/hello/<name>")]
 ```
-This macro can be define as:
+This macro can be defined as:
 * A request of type: GET
 * A request located at the path `/hello/`
 * A request with an unique parameter of type string
